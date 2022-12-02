@@ -3,22 +3,14 @@
 </head>
 <body>
 
-<?php
-
-echo date('Y-m-d H:i:s');
-echo 'Test PHP';
-
-$imie = $_POST['imie'];
-$nazwisko = $_POST['nazwisko'];
-$rok_urodzenia = $_POST['rok_urodzenia'];
-$miejsce_urodzenia = $_POST['miejsce_urodzenia'];
+<form action="przechwyt.php" method="post">
+  Imie: <input type="text" name="imie" /><br />
+  Nazwisko: <input type="text" name="nazwisko" /><br />
+  Rok urodzenia: <input type="text" name="rok_urodzenia" /><br />
+  Miejsce urodzenia: <input type="text" name="miejsce_urodzenia" /><br />
+  <input type="submit" value="wyślij" />
   
-$lata = date('Y') - $rok_urodzenia;
- 'Cześć ' .$imie. .$nazwisko.;
-$string = 'Cześć ' .$imie. .$nazwisko. 'Urodziłem/am się w/we ' .$miejsce_urodzenia.'. Mam '.$lata.' lat.';
- 
-echo $string
-  ?>
+</form>  
 
 
 </body>
